@@ -15,13 +15,13 @@
             <property name="javax.persistence.jdbc.password" value="postgres"/>
 
             <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+            <property name="hibernate.naming.implicit-strategy"
+                      value="org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
             <!--
-             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
-             <property name="hibernate.naming.implicit-strategy"
-                       value="org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl"/>
-             <property name="hibernate.show_sql" value="true"/>
-             <property name="hibernate.format_sql" value="true"/>
-            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
             -->
         </properties>
     </persistence-unit>

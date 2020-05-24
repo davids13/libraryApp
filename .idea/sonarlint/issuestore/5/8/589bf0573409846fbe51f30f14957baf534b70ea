@@ -1,0 +1,11 @@
+
+Y
+java:S1854">Remove this useless assignment to local variable "authorList".(­‹ûØ8ŒŸ—Ä¤.
+[
+java:S1854">Remove this useless assignment to local variable "authorList".(ÇÞ€‹8çåžÄ¤.
+I
+java:S1121".Extract the assignment out of this expression.(ÇÞ€‹8çåžÄ¤.
+`
+java:S1596">Replace "Collections.EMPTY_LIST" by "Collections.emptyList()".(÷ƒ¨öúÿÿÿÿ8©¥¤Ä¤.
+S
+java:S1128"1Remove this unused import 'java.util.Collection'.(¹ÉÐšùÿÿÿÿ8©¥¤Ä¤.
