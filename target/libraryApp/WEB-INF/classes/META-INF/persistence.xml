@@ -7,14 +7,14 @@
     <persistence-unit name="libraryApp_PU" transaction-type="JTA">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <jta-data-source>java:app/jdbc/librarydb</jta-data-source>
-        <!--<class>github.library.com.entity.Author</class>-->
+        <class>github.library.com.entity.Author</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/librarydb"/>
             <property name="javax.persistence.jdbc.user" value="postgres"/>
             <property name="javax.persistence.jdbc.password" value="postgres"/>
 
-            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
             <property name="hibernate.naming.implicit-strategy"
                       value="org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl"/>
@@ -22,6 +22,7 @@
             <property name="hibernate.format_sql" value="true"/>
             <!--
             <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
             -->
         </properties>
     </persistence-unit>
