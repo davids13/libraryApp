@@ -32,5 +32,5 @@ Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 libraryApp.iml,f\5\f5ea933355acac116aa531ed9df46f8473f2e53c
 _
 /src/main/webapp/WEB-INF/glassfish-resources.xml,8\8\88e56c0e9b6175bcf31191d684d427b8f84f8493
-s
-Csrc/main/java/github/library/com/control/service/AuthorService.java,5\8\589bf0573409846fbe51f30f14957baf534b70ea
+w
+Gsrc/main/java/github/library/com/control/service/AuthorServiceImpl.java,4\6\46d4874be07a0d419605d3992915420c9737fa71

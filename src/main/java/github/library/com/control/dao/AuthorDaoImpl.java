@@ -23,10 +23,10 @@ public class AuthorDaoImpl {
 
     public void save(Author author) {
         //save or update the employee
-        Author authorDB = entityManager.merge(author);
-
+        //Author authorDB = entityManager.merge(author);
+        entityManager.persist(author);
         //update with id from db
-        authorDB.setId(author.getId());
+        //authorDB.setId(author.getId());
     }
 
 }

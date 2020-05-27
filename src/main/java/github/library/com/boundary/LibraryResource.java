@@ -31,9 +31,10 @@ public class LibraryResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response saveAuthor(Author author) {
+        if (author == null)
+            throw new WebApplicationException(Response.status(Response.Status.BAD_REQUEST).entity("request field").build());
 
         authorServiceImpl.saveAuthor(author);
-
         return Response.status(Response.Status.CREATED).entity(author).build();
     }
 

@@ -7,7 +7,7 @@
     <persistence-unit name="libraryApp_PU" transaction-type="JTA">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <jta-data-source>java:app/jdbc/librarydb</jta-data-source>
-        <class>github.library.com.entity.Author</class>
+        <!--<class>github.library.com.entity.Author</class>-->
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/librarydb"/>
