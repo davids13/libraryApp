@@ -7,8 +7,6 @@ s
 Csrc/main/java/github/library/com/commons/corsFilter/CorsFilter.java,2\4\247f350c18ba92ee6b1662215821c00ca2c0fe84
 p
 @src/main/java/github/library/com/commons/jpa/AbstractEntity.java,4\7\47d2917df2b1d7000ad2ed8d617ceb5b0d899b51
-o
-?src/main/java/github/library/com/control/dao/AuthorDaoImpl.java,d\2\d2af366d9817218da209db1cd866b782273daf0c
 c
 3src/main/java/github/library/com/entity/Author.java,1\4\14ce9d576cc7bb04554dcbf188fe3ee45d80ee2e
 n
@@ -32,5 +30,9 @@ Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 libraryApp.iml,f\5\f5ea933355acac116aa531ed9df46f8473f2e53c
 _
 /src/main/webapp/WEB-INF/glassfish-resources.xml,8\8\88e56c0e9b6175bcf31191d684d427b8f84f8493
-w
-Gsrc/main/java/github/library/com/control/service/AuthorServiceImpl.java,4\6\46d4874be07a0d419605d3992915420c9737fa71
+k
+;src/main/java/github/library/com/control/dao/AuthorDao.java,a\1\a12276760315945c9bcb11241493cd8ffdd19b7e
+s
+Csrc/main/java/github/library/com/control/service/AuthorService.java,5\8\589bf0573409846fbe51f30f14957baf534b70ea
+~
+Nsrc/main/java/github/library/com/commons/handleErrorsRest/NotfoundManager.java,a\1\a196032d6cb96a1ab4f08cf135dff8efc367ea11

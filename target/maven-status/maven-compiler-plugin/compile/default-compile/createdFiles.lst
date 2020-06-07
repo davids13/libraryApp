@@ -1,8 +1,9 @@
-github\library\com\DBConnection.class
 github\library\com\control\dao\AuthorDaoImpl.class
+github\library\com\control\dao\AuthorDao.class
+github\library\com\control\service\AuthorServiceImpl.class
 github\library\com\entity\Author.class
-github\library\com\Demo.class
 github\library\com\commons\config\JaxRSApplication.class
+github\library\com\control\service\AuthorService.class
 github\library\com\commons\corsFilter\CorsFilter.class
 github\library\com\boundary\LibraryResource.class
 github\library\com\commons\jpa\AbstractEntity.class

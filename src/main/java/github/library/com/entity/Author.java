@@ -20,6 +20,15 @@ public class Author extends AbstractEntity implements Serializable {
     @Column(name = "author_name")
     private String authorName;
 
+    // no arg constructor and full constructor for the serialization
+    public Author() {
+    }
+
+    public Author(int id, String authorName) {
+        super(id);
+        this.authorName = authorName;
+    }
+
     public String getAuthorName() {
         return authorName;
     }
