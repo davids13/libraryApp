@@ -2,6 +2,7 @@ package github.library.com.control.service;
 
 import github.library.com.control.dao.AuthorDao;
 import github.library.com.entity.Author;
+import github.library.com.entity.Genre;
 
 import javax.ejb.Stateful;
 import javax.inject.Inject;
@@ -26,6 +27,14 @@ public class AuthorService {
             return Collections.emptyList();
         }
         return authorStream.collect(Collectors.toList());
+    }
+
+    public List<Genre> getListOfAllGenres() {
+        final Stream<Genre> genreStream = authorDao.getAllGenre();
+        if (genreStream == null)
+            return Collections.emptyList();
+
+        return genreStream.collect(Collectors.toList());
     }
 
 }

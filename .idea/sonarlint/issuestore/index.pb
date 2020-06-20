@@ -36,3 +36,7 @@ s
 Csrc/main/java/github/library/com/control/service/AuthorService.java,5\8\589bf0573409846fbe51f30f14957baf534b70ea
 ~
 Nsrc/main/java/github/library/com/commons/handleErrorsRest/NotfoundManager.java,a\1\a196032d6cb96a1ab4f08cf135dff8efc367ea11
+b
+2src/main/java/github/library/com/entity/Genre.java,a\2\a29f469daed91e0af5a5b8bece7119ef80177fc7
+a
+1src/main/java/github/library/com/entity/Book.java,b\8\b8d4e8c474ce60570cc57acb08226479d09444b7

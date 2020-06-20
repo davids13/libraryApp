@@ -2,6 +2,7 @@ package github.library.com.boundary;
 
 import github.library.com.control.service.AuthorService;
 import github.library.com.entity.Author;
+import github.library.com.entity.Genre;
 
 import javax.ejb.Stateful;
 import javax.inject.Inject;
@@ -34,11 +35,22 @@ public class LibraryResource {
         return Response.ok(authorList).build();
     }
 
+    @GET
+    @Path("/genres")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getGenres() {
+        final List<Genre> genreList = authorService.getListOfAllGenres();
+        if (genreList.isEmpty())
+            return Response.status(Response.Status.NO_CONTENT).build();
+
+        return Response.ok(genreList).build();
+    }
+
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response postAuthor(final Author author, @Context UriInfo uriInfo) {
-        if (author.getAuthorName().isEmpty())
+        if (author.getFirstName().isEmpty() && author.getLastName().isEmpty())
             throw new WebApplicationException(Response.status(Response.Status.BAD_REQUEST).build());
 
         authorService.save(author);
